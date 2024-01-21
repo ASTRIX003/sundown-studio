@@ -1,0 +1,39 @@
+*{
+    margin: 0;
+    padding: 0;
+box-sizing: border-box;
+}
+html,body{
+height: 100%;
+width: 100%;
+
+}
+.page-1{
+    height: 100vh;
+    width: 100vw;
+    /* background-color: rgb(161, 161, 24); */
+    position: relative;
+}
+.elem{
+    height: 100px;
+    width: 100%;
+    margin-bottom: 1px solid grey;
+    top: 30%;
+    background-color: aqua;
+    position: relative;
+    overflow: hidden;
+}
+.elem h1{
+    font-size: 4vw;
+}
+.elem .overlay{
+    background-color: blue;
+    height: 100px;
+    width: 100%;
+    position: absolute;
+    top: -100%;
+    transition: all ease 0.2s;
+}
+.elem:hover .overlay{
+    top: 0;
+}
